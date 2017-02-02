@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EDD7"
+    android:orientation="vertical" >
+
+	<TextView 
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f7f7f7"
+        android:text="制作二维码"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        />
+	<LinearLayout
+	    android:id="@+id/mylinear"
+	    android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" 
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:lines="1"
+            android:hint="请输入字符或者网址"/>
+
+        <Button
+            android:id="@+id/make_Qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始制作" />
+
+    </LinearLayout>
+	
+	<ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/mylinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_marginBottom="48dp"
+        />
+</RelativeLayout>
+
+ 
